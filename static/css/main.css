@@ -501,7 +501,7 @@ nav > a:hover::before{
     height: 17px;
     width: 70px;
     margin: 6px;
-    border: 2px solid #393E46;
+    border: 2px solid #B2B2B2;
     border-radius: 5px;
     cursor: pointer;
     transition: .5s;
