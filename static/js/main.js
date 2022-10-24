@@ -156,7 +156,7 @@ const aboutMeTxt = "SOBRE MIM"
 const firstParagraphAboutTxt = 'Me chamo Murilo tenho 22 anos e atualmente  curso Engenharia de Software na federal de Brasília-DF. Logo que ingressei na universidade eu tive a certeza que ali era a minha área, como todas as vezes em que desenvolvo, reafirma ainda mais que foi o maior acerto que cometi na minha vida.'
 const secondParagraphAboutTxt = "Estou trabalhando em me tornar um Desenvolvedor Full-Stack, já que tenho um fascínio nas duas ramificações: Front-End e Back-End. De maneira geral e resumida, busco por uma oportunidade que me faça adquirir novos aprendizados e que agregue mais conhecimento e crescimento profissional."
 const objectiveTxt = "OBJETIVOS"
-const firstParagraphObjectiveTxt = "Meu objetivo profissional é me tornar um Desenvolvedor Full Stack, já que sou apaixonado pelo Front-End e Back-End. Por fim só ficarei realizado quando eu chegar em um nivel de tanto aprender com amigos de trabalho quanto poder ensinalhes coisas novas também de acordo com minhas experiências."
+const firstParagraphObjectiveTxt = "Meu objetivo profissional é me tornar um Desenvolvedor Full Stack, já que sou apaixonado pelo Front-End e Back-End. Por fim só ficarei realizado quando eu chegar em um nivel de tanto aprender com amigos de trabalho quanto poder ensina-lhes coisas novas também de acordo com minhas experiências."
 const secondParagraphObjectiveTxt = ""
 
 const interval = 30;
