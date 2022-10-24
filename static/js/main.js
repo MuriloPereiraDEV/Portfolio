@@ -45,9 +45,6 @@ label5.addEventListener('click', () => {
     label5.style.border = '2px solid #ffffff';
 })
 
-
-
-
 //GET SKILLS BLOCK
 var skillHtml = document.querySelector('.skill-html')
 var skillCss = document.querySelector('.skill-css')
@@ -139,16 +136,11 @@ skillReact.addEventListener('mouseout', () => {
 })
 
 
-
-
 //FUNCTIONS THAT SHOW SECTIONS
 window.sr = ScrollReveal({ reset: true})
 
 sr.reveal('#section2', { duration: 1500 })
 sr.reveal('#section3', { duration: 1500 })
-
-
-
 
 
 //FUNCTION THAT EFFECTS TYPE OF INFORMATION
@@ -161,41 +153,39 @@ const firstParagraphObjective = document.querySelector('#first-paragraph-objecti
 const secondParagraphObjective = document.querySelector('#second-paragraph-objective')
 
 const aboutMeTxt = "SOBRE MIM"
-const firstParagraphAboutTxt = "Me chamo Murilo, tenho 22 anos e sou um apaixonado por tecnologia. Sempre achei fascinante tudo que tivesse haver com tecnologia, principalmente relacionada a computação, e foi por isso que em 2018 comecei minha faculdade de Engenharia de Software na Universidade de Brasília(UnB)."
-const secondParagraphAboutTxt = "Desde lá, venho adquirindo conhecimentos tanto na parte de Front-End quanto no Back-End, pois sempre achei fascinante as duas ramificações."
+const firstParagraphAboutTxt = 'Me chamo Murilo tenho 22 anos e atualmente  curso Engenharia de Software na federal de Brasília-DF. Logo que ingressei na universidade eu tive a certeza que ali era a minha área, como todas as vezes em que desenvolvo, reafirma ainda mais que foi o maior acerto que cometi na minha vida.'
+const secondParagraphAboutTxt = "Estou trabalhando em me tornar um Desenvolvedor Full-Stack, já que tenho um fascínio nas duas ramificações: Front-End e Back-End. De maneira geral e resumida, busco por uma oportunidade que me faça adquirir novos aprendizados e que agregue mais conhecimento e crescimento profissional."
 const objectiveTxt = "OBJETIVOS"
 const firstParagraphObjectiveTxt = "Meu objetivo profissional é me tornar um Desenvolvedor Full Stack, já que sou apaixonado pelo Front-End e Back-End. Por fim só ficarei realizado quando eu chegar em um nivel de tanto aprender com amigos de trabalho quanto poder ensinalhes coisas novas também de acordo com minhas experiências."
-const secondParagraphObjectiveTxt = "De maneira resumida, o importante é ser feliz e transmitir essa felicidades para todos os colegas de trabalho e familiares."
+const secondParagraphObjectiveTxt = ""
 
-const interval = 40;
+const interval = 30;
 
-function writeContent(firstParagraphAbout, firstParagraphAboutTxt, interval){
-    const char = firstParagraphAboutTxt.split("").reverse()
+function writeContent(element, elementTxt, interval){
+    const char = elementTxt.split("").reverse()
     const typer = setInterval(() => {
         if(!char.length){
             return clearInterval(typer)
         }
         const next = char.pop()
-        firstParagraphAbout.innerHTML += next
+        element.innerHTML += next
     }, interval)
 }
 
-async function writeTxt(aboutMe, aboutMeTxt, firstParagraphAbout, firstParagraphAboutTxt, secondParagraphAbout, secondParagraphAboutTxt, objective, objectiveTxt, firstParagraphObjective, firstParagraphObjectiveTxt, secondParagraphObjective, secondParagraphObjectiveTxt, interval){
+async function writeTxt(aboutMe, aboutMeTxt, firstParagraphAbout, firstParagraphAboutTxt, secondParagraphAbout, secondParagraphAboutTxt, objective, objectiveTxt, firstParagraphObjective, firstParagraphObjectiveTxt, interval){
     writeContent(aboutMe, aboutMeTxt, interval)
     await sleep(1)
     writeContent(firstParagraphAbout, firstParagraphAboutTxt, interval)
-    await sleep(15)
+    await sleep(9)
     writeContent(secondParagraphAbout, secondParagraphAboutTxt, interval)
-    await sleep(8)
+    await sleep(9)
     writeContent(objective, objectiveTxt, interval)
     await sleep(1)
     writeContent(firstParagraphObjective, firstParagraphObjectiveTxt, interval)
-    await sleep(16)
-    writeContent(secondParagraphObjective, secondParagraphObjectiveTxt, interval)
 }
 
 async function sleep(seconds){
     return new Promise((resolve) => setTimeout(resolve, seconds * 1000))
 }
 
-writeTxt(aboutMe, aboutMeTxt, firstParagraphAbout, firstParagraphAboutTxt, secondParagraphAbout, secondParagraphAboutTxt, objective, objectiveTxt, firstParagraphObjective, firstParagraphObjectiveTxt, secondParagraphObjective, secondParagraphObjectiveTxt, interval)
+writeTxt(aboutMe, aboutMeTxt, firstParagraphAbout, firstParagraphAboutTxt, secondParagraphAbout, secondParagraphAboutTxt, objective, objectiveTxt, firstParagraphObjective, firstParagraphObjectiveTxt, interval)
