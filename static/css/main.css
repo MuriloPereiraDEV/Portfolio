@@ -509,6 +509,7 @@ nav > a:hover::before{
 
 #slide1Label{
     border: 2px solid #ffffff;
+    background: #ffffff;
 }
 
 .navigation-slides > label:hover{

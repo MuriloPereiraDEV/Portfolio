@@ -7,42 +7,67 @@ var label5 = document.querySelector('#slide1Labe5')
 
 label1.addEventListener('click', () => {
     label1.style.border = '2px solid #ffffff';
+    label1.style.background = '#ffffff';
     label2.style.border = '2px solid #B2B2B2';
+    label2.style.background = 'transparent';
     label3.style.border = '2px solid #B2B2B2';
+    label3.style.background = 'transparent';
     label4.style.border = '2px solid #B2B2B2';
+    label4.style.background = 'transparent';
     label5.style.border = '2px solid #B2B2B2';
+    label5.style.background = 'transparent';
 })
 
 label2.addEventListener('click', () => {
     label1.style.border = '2px solid #B2B2B2';
+    label1.style.background = 'transparent';
     label2.style.border = '2px solid #ffffff';
+    label2.style.background = '#ffffff'
     label3.style.border = '2px solid #B2B2B2';
+    label3.style.background = 'transparent';
     label4.style.border = '2px solid #B2B2B2';
+    label4.style.background = 'transparent';
     label5.style.border = '2px solid #B2B2B2';
+    label5.style.background = 'transparent';
 })
 
 label3.addEventListener('click', () => {
     label1.style.border = '2px solid #B2B2B2';
+    label1.style.background = 'transparent';
     label2.style.border = '2px solid #B2B2B2';
+    label2.style.background = 'transparent';
     label3.style.border = '2px solid #ffffff';
+    label3.style.background = '#ffffff';
     label4.style.border = '2px solid #B2B2B2';
+    label4.style.background = 'transparent';
     label5.style.border = '2px solid #B2B2B2';
+    label5.style.background = 'transparent';
 })
 
 label4.addEventListener('click', () => {
     label1.style.border = '2px solid #B2B2B2';
+    label1.style.background = 'transparent';
     label2.style.border = '2px solid #B2B2B2';
+    label2.style.background = 'transparent';
     label3.style.border = '2px solid #B2B2B2';
+    label3.style.background = 'transparent';
     label4.style.border = '2px solid #ffffff';
+    label4.style.background = '#ffffff';
     label5.style.border = '2px solid #B2B2B2';
+    label5.style.background = 'transparent';
 })
 
 label5.addEventListener('click', () => {
     label1.style.border = '2px solid #B2B2B2';
+    label1.style.background = 'transparent';
     label2.style.border = '2px solid #B2B2B2';
+    label2.style.background = 'transparent';
     label3.style.border = '2px solid #B2B2B2';
+    label3.style.background = 'transparent';
     label4.style.border = '2px solid #B2B2B2';
+    label4.style.background = 'transparent';
     label5.style.border = '2px solid #ffffff';
+    label5.style.background = '#ffffff';
 })
 
 //GET SKILLS BLOCK
