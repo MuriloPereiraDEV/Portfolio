@@ -101,7 +101,7 @@ body{
 }
 
 
-#section1, #section2, #section3{
+#section1, #section2, #section3, #section4{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@ nav{
 
 
 nav > a{
-    padding-right: 5%;
+    padding-right: 3%;
     font-size: 20pt;
     font-weight: 900;
     color: rgb(255,255,255);
@@ -162,7 +162,7 @@ nav > a:hover::before{
 
 
 #portfolio{
-    padding-right: 38%;
+    padding-right: 39%;
 }
 
 #section1{
@@ -214,7 +214,8 @@ nav > a:hover::before{
     overflow: auto;
     border: 3px solid #393E46;
     box-shadow: 0 0 15px #000000;
-    animation: animateBackgroundIcons 10s ease infinite;
+    background-size: 300% 300%;
+    animation: backGround 15s ease infinite;
 }
 
 .info-about{
@@ -268,6 +269,269 @@ nav > a:hover::before{
 
 
 #section2{
+    height: 100vh;
+    width: 100%;
+    border-bottom: 5px solid #EEEEEE;
+    display: flex;
+    box-shadow: inset 0 0 20px rgb(0, 0, 0);
+}
+
+.portfolio-container{
+    height: 85%;
+    width: 95%;
+    position: relative;
+    margin-top: 3%;
+    border-radius: 20px;
+}
+
+
+
+.portfolio-info1{
+    position: absolute;
+    inset: 5% 66% 51% 5%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
+    transition: 0.5s;
+    animation: backGround 2s linear infinite ;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info1:hover{
+    position: absolute;
+    inset: 5% 50% 43% 5%;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    z-index: 5;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info2{
+    position: absolute;
+    inset: 5% 36% 51% 36%;
+    border-radius: 20px;
+    background: linear-gradient(200deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    transition: 0.5s;
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info2:hover{
+    position: absolute;
+    inset: 5% 31% 35% 31%;
+    border-radius: 20px;
+    background: linear-gradient(20deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    z-index: 5;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info3{
+    position: absolute;
+    inset: 5% 5% 51% 66%;
+    border-radius: 20px;
+    background: linear-gradient(105deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    transition: 0.5s;
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info3:hover{
+    position: absolute;
+    inset: 5% 5% 44% 55%;
+    border-radius: 20px;
+    background: linear-gradient(105deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    z-index: 5;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info4{
+    position: absolute;
+    inset: 52% 18.5% 5% 51.5%;
+    border-radius: 20px;
+    background: linear-gradient(270deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    transition: 0.5s;
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info4:hover{
+    position: absolute;
+    inset: 5% 5% 5% 5%;
+    border-radius: 20px;
+    background: linear-gradient(270deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
+    animation: backGround 2s ease infinite;
+    z-index: 5;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info5{
+    position: absolute;
+    inset: 52% 51.5% 5% 18.5%;
+    border-radius: 20px;
+    background: linear-gradient(165deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    transition: 0.5s;
+    background-size: 300% 300%;
+    animation: backGround 10s ease infinite;
+    box-shadow: 0 0 20px;
+}
+
+.portfolio-info5:hover{
+    position: absolute;
+    inset: 60% 51.5% 5% 18.5%;
+    border-radius: 20px;
+    background: linear-gradient(165deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
+    animation: backGround 10s ease infinite;
+    z-index: 5;
+    box-shadow: 0 0 20px;
+}
+
+
+
+.portfolio-info-real1{
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+    background: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-info-real1 h1{
+    font-size: 35pt;
+    margin-top: 24%;
+    display: flex;
+    justify-content: center;
+    color: #393E46;
+    border-top: 1px solid #393E46;
+    border-bottom: 1px solid #393E46;
+}
+
+.portfolio-info-real1 p{
+    padding: 2%;
+    font-size: 20pt;
+    display: none;
+    color: #393E46;
+}
+
+.portfolio-info-real2{
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+    background: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-info-real2 h1{
+    font-size: 35pt;
+    margin-top: 24%;
+    display: flex;
+    justify-content: center;
+    color: #393E46;
+    border-top: 1px solid #393E46;
+    border-bottom: 1px solid #393E46;
+}
+
+.portfolio-info-real2 p{
+    padding: 2%;
+    font-size: 20pt;
+    display: none;
+    color: #393E46;
+}
+
+.portfolio-info-real3{
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+    background: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-info-real3 h1{
+    font-size: 35pt;
+    margin-top: 24%;
+    display: flex;
+    justify-content: center;
+    color: #393E46;
+    border-top: 1px solid #393E46;
+    border-bottom: 1px solid #393E46;
+}
+
+.portfolio-info-real3 p{
+    padding: 2%;
+    font-size: 20pt;
+    display: none;
+    color: #393E46;
+}
+
+.portfolio-info-real4{
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+    background: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-info-real4 h1{
+    font-size: 35pt;
+    margin-top: 24%;
+    display: flex;
+    justify-content: center;
+    color: #393E46;
+    border-top: 1px solid #393E46;
+    border-bottom: 1px solid #393E46;
+}
+
+.portfolio-info-real4 p{
+    padding: 2%;
+    font-size: 20pt;
+    display: none;
+    color: #393E46;
+}
+
+.portfolio-info-real5{
+    position: absolute;
+    inset: 5px;
+    border-radius: 15px;
+    background: #B2B2B2;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-info-real5 h1{
+    font-size: 35pt;
+    margin-top: 24%;
+    display: flex;
+    justify-content: center;
+    color: #393E46;
+    border-top: 1px solid #393E46;
+    border-bottom: 1px solid #393E46;
+}
+
+.portfolio-info-real5 p{
+    padding: 2%;
+    font-size: 20pt;
+    display: none;
+    color: #393E46;
+}
+
+
+
+
+#section3{
     height: 100vh;
     width: 100%;
     border-bottom: 5px solid #EEEEEE;
@@ -468,7 +732,7 @@ nav > a:hover::before{
 
 
 
-#section3{
+#section4{
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -587,8 +851,8 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: 300% 300%;
     background: linear-gradient(45deg, rgb(255, 0, 0), rgb(0, 26, 255));
+    background-size: 300% 300%;
     animation: backGround 15s ease infinite;
 }
 

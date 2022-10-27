@@ -166,6 +166,7 @@ window.sr = ScrollReveal({ reset: true})
 
 sr.reveal('#section2', { duration: 1500 })
 sr.reveal('#section3', { duration: 1500 })
+sr.reveal('#section4', { duration: 1500 })
 
 
 //FUNCTION THAT EFFECTS TYPE OF INFORMATION
@@ -214,3 +215,68 @@ async function sleep(seconds){
 }
 
 writeTxt(aboutMe, aboutMeTxt, firstParagraphAbout, firstParagraphAboutTxt, secondParagraphAbout, secondParagraphAboutTxt, objective, objectiveTxt, firstParagraphObjective, firstParagraphObjectiveTxt, interval)
+
+
+var portfolioInfo1 = document.querySelector('.portfolio-info1')
+var portfolioInfo2 = document.querySelector('.portfolio-info2')
+var portfolioInfo3 = document.querySelector('.portfolio-info3')
+var portfolioInfo4 = document.querySelector('.portfolio-info4')
+var portfolioInfo5 = document.querySelector('.portfolio-info5')
+
+
+var contact = document.querySelector('.portfolio-info-real1')
+var auxContactH1 = contact.querySelector('h1')
+var auxContactP = contact.querySelector('p')
+var college = document.querySelector('.portfolio-info-real2')
+var auxCollegeH1 = college.querySelector('h1')
+var auxCollegeP = college.querySelector('p')
+var courses = document.querySelector('.portfolio-info-real3')
+var auxCoursesH1 = courses.querySelector('h1')
+var auxCoursesP = courses.querySelector('p')
+var languages = document.querySelector('.portfolio-info-real5')
+var auxLanguagesH1 = languages.querySelector('h1')
+var auxLanguagesP = languages.querySelector('p')
+var experiences = document.querySelector('.portfolio-info-real4')
+var auxExperiencesH1 = experiences.querySelector('h1')
+var auxExperiencesP = experiences.querySelector('p')
+
+contact.addEventListener('mouseover', () => {
+    auxContactH1.style.display = 'none'
+    auxContactP.style.display = 'flex'
+})
+contact.addEventListener('mouseout', () => {
+    auxContactH1.style.display = 'flex'
+    auxContactP.style.display = 'none'
+})
+college.addEventListener('mouseover', () => {
+    auxCollegeH1.style.display = 'none'
+    auxCollegeP.style.display = 'flex'
+})
+college.addEventListener('mouseout', () => {
+    auxCollegeH1.style.display = 'flex'
+    auxCollegeP.style.display = 'none'
+})
+courses.addEventListener('mouseover', () => {
+    auxCoursesH1.style.display = 'none'
+    auxCoursesP.style.display = 'flex'
+})
+courses.addEventListener('mouseout', () => {
+    auxCoursesH1.style.display = 'flex'
+    auxCoursesP.style.display = 'none'
+})
+languages.addEventListener('mouseover', () => {
+    auxLanguagesH1.style.display = 'none'
+    auxLanguagesP.style.display = 'flex'
+})
+languages.addEventListener('mouseout', () => {
+    auxLanguagesH1.style.display = 'flex'
+    auxLanguagesP.style.display = 'none'
+})
+experiences.addEventListener('mouseover', () => {
+    auxExperiencesH1.style.display = 'none'
+    auxExperiencesP.style.display = 'flex'
+})
+experiences.addEventListener('mouseout', () => {
+    auxExperiencesH1.style.display = 'flex'
+    auxExperiencesP.style.display = 'none'
+})

@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="../static/css/main.css">
     <title>Entry</title>
 </head>
 <body>
@@ -288,8 +287,9 @@
         <nav>
             <a id="portfolio" href="https://murilopereiraportfolio.herokuapp.com/">PORTIFÓLIO</a>
             <a href="#section1">SOBRE</a>
-            <a href="#section2">HABILIDADES</a>
-            <a href="#section3">PROJETOS</a>
+            <a href="#section2">CURRÍCULO</a>
+            <a href="#section3">HABILIDADES</a>
+            <a href="#section4">PROJETOS</a>
         </nav>
     </header>
 
@@ -324,6 +324,44 @@
         </section>
 
         <section id="section2">
+            <div class="portfolio-container">
+                <div class="portfolio-info1">
+                    <div class="portfolio-info-real1">
+                        <h1 id="contactH">Contato</h1>
+                        <p id="contactP">Localidade: Brasil - Distrito Federal - Taguatinga<br><br>E-mail: murilogalego10@gmail.com<br><br>Telefone: +55 (61) 9 8110-7228<br><br>Telefone: +55 (61) 9 9620-2997</p>
+                    </div>
+                </div>
+                <div class="portfolio-info2">
+                    <div class="portfolio-info-real2">
+                        <h1 id="collegeH">Faculdade</h1>
+                        <p id="collegeP">Grau Acadêmico: Bacharelado<br><br>Curso: Engenharia de Software<br><br>Período: 7º semestre - Previsao para formar em 2024<br><br>Instituição: Universidade de Brasília(UnB)</p>
+                    </div>
+                </div>
+                <div class="portfolio-info3">
+                    <div class="portfolio-info-real3">
+                        <h1 id="courseH">Cursos</h1>
+                        <p id="courseP">Cursos: Todos as minhas habilidades e cursos que eu fiz foram feitas na plataforma da Alura.<br><br>Estou atualmente me aperfeiçoando nelas para poder me tornar um especialista.</p>
+                    </div>
+                </div>
+                <div class="portfolio-info4">
+                    <div class="portfolio-info-real4">
+                        <h1 id="">Experiências</h1>
+                        <p id="">Estágio:<br><br>Softex(06/2022 - atualmente) - Criação de aplicações que integrem os sistemas utilizados na empresa como
+                            Fusion Platform, D4Science, SQL, PowerBI e Slack, utilizando Java, Python e
+                            linguagens de Frontend como HTML, CSS, JavaScript.<br><br>Criação, gerenciamento e monitoramento de instâncias EC2 na AWS,
+                            promovendo todas as ferramentas para possuir um sistema mais seguro<br><br>HelpDesk de todas as formas possíveis.<br><br>Criação e gerenciamento de servidores através de Windows ou Linux.</p>
+                    </div>
+                </div>
+                <div class="portfolio-info5">
+                    <div class="portfolio-info-real5">
+                        <h1 id="">Línguas</h1>
+                        <p id="">Linguas:<br><br> Português - Nativo<br><br>Inglês - Intermediário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section3">
             <div class="skills-container">
                 <div class="skills">
 
@@ -378,7 +416,7 @@
             </div>
         </section>
 
-        <section id="section3">
+        <section id="section4">
 
             <div class="projects-container">
                 
@@ -500,8 +538,6 @@
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="../static/js/main.js"></script>
 
 </body>
 </html>
